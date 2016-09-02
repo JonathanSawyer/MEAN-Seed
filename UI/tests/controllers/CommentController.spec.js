@@ -49,7 +49,7 @@
             scope.comments = [];
             scope.comments.push({_id : -1});
             scope.update(0);
-            expect(commentService.update).toHaveBeenCalledWith(-1, scope.comments[0]);
+            expect(commentService.update).toHaveBeenCalledWith(scope.comments[0]);
         });
 
         it('#delete', function() 

@@ -13,7 +13,7 @@ angular.module('app.controllers').controller('CommentController', ['$scope', 'Co
 
     $scope.update = function($index)
     {
-        $scope.commentService.update($scope.comments[$index]._id, $scope.comments[$index]);
+        $scope.commentService.update($scope.comments[$index]);
     }
 
     $scope.delete = function($index)

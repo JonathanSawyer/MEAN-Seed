@@ -22,8 +22,8 @@ angular.module('app.service').factory('CommentService', ['$http', function($http
         });
     };
 
-    Comment.update = function (id, comment) {
-        return $http.put("../api/comments/" + id, comment)
+    Comment.update = function (comment) {
+        return $http.put("../api/comments/" + comment._id, comment)
                     .then(function (response)
         {
             return response;

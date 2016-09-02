@@ -25,13 +25,15 @@
         
         it('#update', function () 
         {
-            $httpBackend.expectPUT('../api/comments/id', 
+            $httpBackend.expectPUT('../api/comments/2', 
             {
+                _id : "2",
                 name: 'Some details about a comment'
-            }).respond(200);
+            })
+            .respond(200);
 
             var succeeded;
-            CommentService.update("id", {name : "Some details about a comment"}).then(function () {succeeded = true;});
+            CommentService.update( {_id : "2", name : "Some details about a comment"}).then(function () {succeeded = true;});
             $httpBackend.flush();
             expect(succeeded).toBeTruthy();
         });
