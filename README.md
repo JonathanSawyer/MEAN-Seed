@@ -23,7 +23,7 @@ From the root of the app run the following commands.
 2. `bower install`
 
 ##Run Angular Tests
-1. karma start
+1. `karma start`
 
 ##Run Node Tests
 1. In progress ...
