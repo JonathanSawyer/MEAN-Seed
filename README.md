@@ -1,6 +1,6 @@
-# MEAN Sead
+# MEAN Seed
 
-A MEAN stack sead project with testing for angular (controllers + services) and node. The motivation to get basic integration working between Angular, Node and Mongo while at the same time providing a set of unit tests for Angular and Node.
+A MEAN stack seesed project with testing for angular (controllers + services) and node. The motivation to get basic integration working between Angular, Node and Mongo while at the same time providing a set of unit tests for Angular and Node.
 
 #Angular
 1. Karama is the test runner for angular
