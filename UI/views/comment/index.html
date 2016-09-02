@@ -1,0 +1,23 @@
+<div class="jumbotron text-center">
+		<h1>Comment</h1>
+	</div>
+<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+	<div ng-repeat="comment in comments track by $index">
+		<span style="font-size:20px; margin-left:10px;">
+			<span ng-show="!comment.editMode">{{comment.name}}</span>
+			<input ng-show="comment.editMode" type="text" class="form-control" placeholder="name" ng-model="comment.updatedName"></input>
+			<a ng-click="delete($index)">delete</a>
+			<a ng-show="!comment.editMode" ng-click="comment.editMode = true; comment.updatedName = comment.name;">edit</a>
+			<a ng-show="comment.editMode"  ng-click="comment.editMode = false; comment.name = comment.updatedName; update($index)">save</a>
+			<a ng-show="comment.editMode"  ng-click="comment.editMode = false;">cancel</a>
+		</span>
+	</div>
+	<form ng-submit="create()">
+	<div class="form-group">
+			<input type="text" class="form-control" placeholder="name" ng-model="comment.name"></input>
+	</div>
+	<button type="submit" class="btn btn-primary">Post</button>
+	</form>
+	</div>
+</div>
