@@ -1,6 +1,6 @@
 # MEAN Sead
 
-A MEAN stack sead project with karma/jasmine testing for angular (controllers + services) and node. The motivation behind this project is it takes care of some of th complexity involved with setting up testing and getting basic integration working between different services. 
+A MEAN stack sead project with testing for angular (controllers + services) and node. The motivation to get basic integration working between Angular, Node and Mongo while at the same time providing a set of unit tests for Angular and Node.
 
 #Angular
 1. Karama is the test runner for angular
