@@ -1,8 +1,6 @@
-# Sentiment Analysis
+# MEAN Sead
 
-Very much under construction.
-
-The tool will take comments about something and classify the overall sentiment towards it using the topic modeling algorithm Latent Dirichlet Allocation https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation.
+A MEAN stack sead project with karma/jasmine testing for angular controllers and services and node backend.
 
 ##Prerequisites
 1. You will need `Node.js`, `NPM` and `Bower` installed
@@ -16,12 +14,14 @@ From the root of the app run the following commands.
 1. `npm install`
 2. `bower install`
 
+##Run Tests
+1. karma start
+
 ##Running Application
 1. `node server.js`
 2. navigate to `http://localhost:8080/`
 
-##Plan
-Plan on using https://www.npmjs.com/package/lda to classify sentiment on a set of comment for a product and determine whether its positive, neutral or negative.
+
 
 
 
