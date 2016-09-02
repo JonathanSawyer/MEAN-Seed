@@ -33,7 +33,8 @@ From the root of the app run the following commands.
 2. navigate to `http://localhost:8080/`
 
 #To do
-1. Improve the base UI
+1. Node Tests
+2. Improve the base UI
 
 
 
